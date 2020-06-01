@@ -6,6 +6,11 @@
           <li>
             <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="{{ "images/hugo-logo.png" | relURL }}" alt="Img link to Hugo website" width="22" height="22"></a>
           </li>
+          
+          {{ range .Site.Menus.footer }}
+            <li><a href="{{ .URL }}" target="_blank">{{ .Name }}</a></li>
+          {{ end }}
+            
         </ul>
       </footer>
 
