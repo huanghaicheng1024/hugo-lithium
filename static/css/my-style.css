@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
     border-radius: 0%;
   }
   
+.article-content a {
+    box-shadow: inset 0 -1px 0 #CBF8DF;
+}  
+
   
 @media (min-width: 600px) {
   .nav-logo img {
