@@ -6,6 +6,11 @@ h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
   font-family: 'Lato','Microsoft Yahei', sans-serif;
 }
 
+code {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: consolas;
+}
+
 .caption {
   text-align: center;
 }
@@ -24,6 +29,9 @@ h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
     box-shadow: inset 0 -1px 0 #CBF8DF;
 }  
 
+.hljs{
+  font-family: monospace;
+}  
   
 @media (min-width: 600px) {
   .nav-logo img {
