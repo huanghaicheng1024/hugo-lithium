@@ -34,4 +34,24 @@ code {
     max-height: 50px;
     border-radius: 0%;
   }
-  
+
+div.article-footer,div.post-tags{
+  font-size: 16px;
+}  
+
+div.article-footer hr{
+  width: 45%;
+  border-style: dashed;
+  margin-bottom: 1em;
+}
+
+div.article-footer a:hover,div.post-tags a:hover{
+  background: #CBF8DF;
+}
+
+div.article-footer a,div.post-tags a{
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid #CBF8DF;
+  transition: background 150ms ease;  
+}
