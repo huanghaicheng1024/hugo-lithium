@@ -19,18 +19,14 @@
       {{ .Content }}
     </div>
     
-    {{ if or (gt .Params.tags 0) .Lastmod }}
-    {{ if eq .Section "post" }}
-    {{ if ne .Lastmod .Date }}
-      <span class="article-date"> {{ .Lastmod.Format "2006-01-02" }}</span>
-      <p></p>
-    {{ end }}
-    {{ end }}
-    {{ end }}
-    
     
     <div class="article-footer">
       <hr>
+      {{ if eq .Section "post" }}
+      <span class="article-date"> update @ {{ .Lastmod.Format "2006-01-02" }}</span>
+      <p></p>
+      {{ end }}
+
       {{ if .Params.categories }}
         <i class="fas fa-folder"></i>
         {{ range .Params.categories }}
@@ -39,8 +35,7 @@
         {{ end }}
         <p></p>
       {{ end }}
-    </div>
-    <div class="post-tags">
+
     {{ if .Params.tags }}
       <i class="fas fa-tags"></i>
       {{ range .Params.tags }}
