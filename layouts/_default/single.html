@@ -18,10 +18,13 @@
     <div class="article-content">
       {{ .Content }}
     </div>
+    
+    {{ if or (gt .Params.tags 0) .Lastmod }}
     {{ if eq .Section "post" }}
     {{ if ne .Lastmod .Date }}
       <span class="article-date"> {{ .Lastmod.Format "2006-01-02" }}</span>
       <p></p>
+    {{ end }}
     {{ end }}
     {{ end }}
     
