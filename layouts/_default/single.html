@@ -21,7 +21,7 @@
     
     
     <div class="article-footer">
-      <hr>
+      <br/>
       {{ if eq .Section "post" }}
       <span class="article-date"> update @ {{ .Lastmod.Format "2006-01-02" }}</span>
       <p></p>
@@ -43,6 +43,7 @@
         &nbsp;
       {{ end }}
     {{ end }}
+    <br/>
     </div>
   </article>
 
