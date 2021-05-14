@@ -55,3 +55,7 @@ div.article-footer a,div.post-tags a{
   border-bottom: 3px solid #CBF8DF;
   transition: background 150ms ease;  
 }
+
+.content{
+  max-width: 750px;
+}
