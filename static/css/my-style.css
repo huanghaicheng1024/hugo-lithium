@@ -11,6 +11,10 @@ code {
     font-family: consolas;
 }
 
+.hljs {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 .caption {
   text-align: center;
 }
